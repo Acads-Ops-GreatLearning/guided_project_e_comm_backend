@@ -18,7 +18,7 @@ const app = express();
 var cors = require("cors");
 
 const corsOptions = {
-    origin: '*',  // Specify the allowed origin(s)
+    origin: 'http://204.236.253.53',  // Specify the allowed origin(s)
     methods: 'GET,POST, PUT, DELETE',            // Specify the allowed HTTP methods
     allowedHeaders: 'Authorization,Content-Type',  // Specify the allowed headers
     credentials: true,              // Allow credentials (e.g., cookies)
