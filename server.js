@@ -23,7 +23,7 @@ const corsOptions = {
     allowedHeaders: 'Authorization,Content-Type',  // Specify the allowed headers
     credentials: true,              // Allow credentials (e.g., cookies)
 };
-app.use(cors(corsOptions));
+app.use(cors());
 
 // Connecting to the database
 connectDatabase();
