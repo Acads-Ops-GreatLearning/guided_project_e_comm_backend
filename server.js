@@ -17,13 +17,13 @@ const app = express();
 
 var cors = require("cors");
 
-const corsOptions = {
-    origin: 'http://3.86.6.254',  // Specify the allowed origin(s)
-    methods: 'GET,POST, PUT, DELETE',            // Specify the allowed HTTP methods
-    allowedHeaders: 'Authorization,Content-Type',  // Specify the allowed headers
-    credentials: true,              // Allow credentials (e.g., cookies)
-};
-app.use(cors(corsOptions));
+// const corsOptions = {
+//     origin: 'http://3.86.6.254',  // Specify the allowed origin(s)
+//     methods: 'GET,POST, PUT, DELETE',            // Specify the allowed HTTP methods
+//     allowedHeaders: 'Authorization,Content-Type',  // Specify the allowed headers
+//     credentials: true,              // Allow credentials (e.g., cookies)
+// };
+app.use(cors());
 
 // Connecting to the database
 connectDatabase();
